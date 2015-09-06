@@ -4,7 +4,7 @@ body {
 }
 .flip {
   -webkit-perspective: 800;
-   width: 400px;
+   width: 85%;
    height: 200px;
     position: relative;
     margin: 50px auto;
@@ -58,12 +58,45 @@ body {
     min-width: 50px;
     margin: 0;
     border-bottom: none;
+    -webkit-transform: none;
+    vertical-align: middle;
 }
-.tabbed-slidebox .tsb-icons .scroll a:active{
+/*.tabbed-slidebox .tsb-icons .scroll a:active{
     line-height: 16px;
     border-bottom: none;
     font-size: 14px;
-}
+    color: rgba(0, 0, 0, 0.3);
+}*/
 .custom_calendar .tsb-hscroll.scroll-view .scroll{
-  height: 40px;  
+  height: 45px;  
+  padding: 5px 0;
+  box-sizing:border-box;
+}
+.tabbed-slidebox .tsb-icons .scroll a.active {
+    font-size: 14px;
+    -webkit-transform: none;
+    border-bottom: none;
+    line-height: 16px;
+    border-bottom: none;
+    font-size: 14px;
+    color: rgba(0, 0, 0, 0.3);
+}
+.tabbed-slidebox .tsb-icons .scroll a.active span{
+    border-radius: 50px;
+    background-color: red;
+    color: white;
+}
+.tabbed-slidebox .tsb-icons a span {
+    display: block;
+    height: 45px;
+    width: 50%;
+    margin: 0 auto;
+    height: inherit;
+}
+#flip{
+      position: absolute;
+    right: 10px;
+    top: 10px;
+    z-index: 1000;
+}
 }
