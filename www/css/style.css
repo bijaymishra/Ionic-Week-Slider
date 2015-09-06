@@ -10,7 +10,7 @@ body {
     margin: 50px auto;
 }
 .flip .card.flipped {
--webkit-transform: rotatex(360deg);
+-webkit-transform: rotatey(180deg);
 }
 .flip .card {
   width: 100%;
@@ -22,7 +22,7 @@ body {
   width: 100%;
   height: 100%;
   position: absolute;
-  -webkit-backface-visibility: hidden ;
+  /*-webkit-backface-visibility: hidden ;*/
   z-index: 2;
     font-family: Georgia;
     font-size: 3em;
@@ -41,4 +41,29 @@ body {
     background: white;
     color: black;
     cursor: pointer;
+    -webkit-transform: rotatey(180deg);
+}
+.custom_calendar .tsb-icons {
+    margin: 0px;
+}
+.tabbed-slidebox .tsb-icons:after{
+  content: none;
+  display: none!important;
+}
+.tabbed-slidebox .tsb-icons .scroll a {
+    width: auto;
+    line-height: 16px;
+    text-decoration: none;
+    font-size: 14px;
+    min-width: 50px;
+    margin: 0;
+    border-bottom: none;
+}
+.tabbed-slidebox .tsb-icons .scroll a:active{
+    line-height: 16px;
+    border-bottom: none;
+    font-size: 14px;
+}
+.custom_calendar .tsb-hscroll.scroll-view .scroll{
+  height: 40px;  
 }
