@@ -45,6 +45,11 @@ angular.module('starter', ['ionic','tabSlideBox'])
              "content":" Today is 31" },    
           
         ];
+        $scope.contentFlip = false;
+
+        $scope.flipContent = function(){
+          $scope.contentFlip = !$scope.contentFlip;
+        }
         $scope.onSlideMove = function(data){
           //alert("You have selected " + data.index + " tab");
         };

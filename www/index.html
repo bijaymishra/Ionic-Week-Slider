@@ -43,6 +43,17 @@
                  
                   <ion-slide ng-repeat="tab in tabs">
                       <h3>{{tab.content}}</h3>
+                                          <div class="flip"> 
+                            <div class="card" ng-class="{'flipped':contentFlip}"> 
+                                <div class="face front" ng-hide="contentFlip"> 
+                                    Front
+                                </div> 
+                                <div class="face back" ng-show="contentFlip"> 
+                                    Back
+                                </div> 
+                            </div>
+                        <button id="flip" ng-click="flipContent();">Flip</button>
+                        </div> 
                   </ion-slide>
                   
                   
